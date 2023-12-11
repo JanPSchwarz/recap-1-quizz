@@ -3,7 +3,7 @@
   /* border: 1px solid black; */
   margin: 0;
   padding: 0;
-  font-family: 'caveat', sans-serif;
+  font-family: "caveat", sans-serif;
 }
 
 body {
@@ -18,10 +18,17 @@ main {
 
 header {
   width: 100%;
-  text-align: center;
+  /* text-align: center; */
   border: 1px solid black;
   padding: 8px;
   background-color: lightcoral;
+  display: flex;
+  justify-content: center;
+}
+
+.turtle {
+  width: 40px;
+  margin-right: 10px;
 }
 
 footer {
@@ -53,6 +60,10 @@ a {
   color: black;
 }
 
+li:hover {
+  background-color: lightgreen;
+}
+
 .question_card {
   display: flex;
   position: relative;
@@ -61,7 +72,7 @@ a {
   justify-content: center;
   border: 1px solid black;
   border-radius: 10px;
-  margin: 20px auto;
+  margin: 30px auto;
   padding: 15px 0;
   width: 400px;
   height: 200px;
@@ -86,15 +97,31 @@ a {
 }
 
 .question {
-  margin: 20px auto;
+  margin: 15px auto;
   font-size: 1.5rem;
 }
 
 button {
   width: 120px;
-  margin: 10px auto;
+  height: 30px;
+  margin: 20px auto;
   font-size: 1.2rem;
   border-radius: 5px;
   box-shadow: 0px 0px 2px 0px;
   background-color: lightgreen;
+}
+
+button:hover {
+  cursor: pointer;
+  transition: width 0.2s ease-in-out;
+  transition: height 0.2s ease-in-out;
+  width: 125px;
+  height: 40px;
+}
+
+.fa-bookmark {
+  font-size: 2.4rem;
+  position: absolute;
+  top: -20px;
+  right: 5px;
 }
