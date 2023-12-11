@@ -9,7 +9,7 @@
 body {
   width: 600px;
   margin: 50px auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 main {
@@ -18,12 +18,14 @@ main {
 
 header {
   width: 100%;
-  /* text-align: center; */
   border: 1px solid black;
   padding: 8px;
   background-color: lightcoral;
   display: flex;
   justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .turtle {
@@ -33,6 +35,10 @@ header {
 
 footer {
   border: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  background-color: beige;
 }
 
 ul {
@@ -45,6 +51,7 @@ li {
   list-style: none;
   font-size: 1.8rem;
   width: 200px;
+  height: 50px;
 }
 
 #home {
@@ -72,7 +79,7 @@ li:hover {
   justify-content: center;
   border: 1px solid black;
   border-radius: 10px;
-  margin: 30px auto;
+  margin: 40px auto;
   padding: 15px 0;
   width: 400px;
   height: 200px;
