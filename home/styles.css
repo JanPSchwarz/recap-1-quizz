@@ -1,3 +1,5 @@
+/* Allgemeine Rule-Sets */
+
 * {
   box-sizing: border-box;
   /* border: 1px solid black; */
@@ -7,14 +9,17 @@
 }
 
 body {
-  width: 600px;
+  width: 60vw;
   margin: 50px auto;
   /* border: 1px solid black; */
 }
 
 main {
   background-color: beige;
+  width: 100%;
 }
+
+/* Header & Footer */
 
 header {
   width: 100%;
@@ -43,6 +48,7 @@ footer {
 
 ul {
   display: flex;
+  width: 60vw;
 }
 
 li {
@@ -50,8 +56,8 @@ li {
   justify-content: space-evenly;
   list-style: none;
   font-size: 1.8rem;
-  width: 200px;
   height: 50px;
+  width: 20vw;
 }
 
 #home {
@@ -71,6 +77,8 @@ li:hover {
   background-color: lightgreen;
 }
 
+/* Question-Cards */
+
 .question_card {
   display: flex;
   position: relative;
@@ -81,10 +89,16 @@ li:hover {
   border-radius: 10px;
   margin: 40px auto;
   padding: 15px 0;
-  width: 400px;
+  width: 40vw;
   height: 200px;
   background-color: lightblue;
   box-shadow: 0px 0px 2px 0px;
+}
+
+.question {
+  margin: 5px auto;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .hash-tag_box {
@@ -101,11 +115,6 @@ li:hover {
   color: black;
   padding: 2px;
   box-shadow: 0px 0px 2px 0px;
-}
-
-.question {
-  margin: 5px auto;
-  font-size: 1.5rem;
 }
 
 button {
