@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  margin: 0;
+  padding: 0;
+  font-family: "caveat", sans-serif;
+}
+
+body {
+  width: 600px;
+  margin: 50px auto;
+  border: 1px solid black;
+}
+
+main {
+  background-color: beige;
+}
+
+header {
+  width: 100%;
+  /* text-align: center; */
+  border: 1px solid black;
+  padding: 8px;
+  background-color: lightcoral;
+  display: flex;
+  justify-content: center;
+}
+
+.turtle {
+  width: 40px;
+  margin-right: 10px;
+}
+
+footer {
+  border: 1px solid black;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: 1.8rem;
+  width: 200px;
+}
+
+#bookmarks {
+  display: flex;
+  background-color: lightcoral;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+li:hover {
+  background-color: lightgreen;
+}
+
+.question_card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 30px auto;
+  padding: 15px 0;
+  width: 400px;
+  height: 200px;
+  background-color: lightblue;
+  box-shadow: 0px 0px 2px 0px;
+}
+
+.hash-tag_box {
+  position: absolute;
+  display: flex;
+  bottom: 6px;
+  left: 3px;
+}
+
+.hash_tag {
+  margin: 0 3px;
+  background-color: lightcoral;
+  border-radius: 5px;
+  color: black;
+  padding: 2px;
+  box-shadow: 0px 0px 2px 0px;
+}
+
+.question {
+  margin: 5px auto;
+  font-size: 1.5rem;
+}
+
+button {
+  margin: 20px auto;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 0px;
+  background-color: lightgreen;
+  padding: 5px 10px;
+  bottom: 40px;
+}
+
+button:hover {
+  cursor: pointer;
+  transition: padding 0.2s ease-in-out;
+  padding: 5px 15px;
+}
+
+.fa-bookmark {
+  font-size: 2.4rem;
+  position: absolute;
+  top: -20px;
+  right: 5px;
+}
