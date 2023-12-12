@@ -1,0 +1,108 @@
+/* General Rule-Sets */
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    margin: 0;
+    padding: 0;
+    font-family: "caveat", sans-serif;
+  }
+  
+  body {
+    width: 60vw;
+    margin: 50px auto;
+    /* border: 1px solid black; */
+  }
+  
+  main {
+    background-color: beige;
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  
+  /* Header & Footer */
+  
+  header {
+    width: 100%;
+    border: 1px solid black;
+    padding: 8px;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .turtle {
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  footer {
+    border: 1px solid black;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    background-color: beige;
+  }
+  
+  ul {
+    display: flex;
+    width: 60vw;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 1.8rem;
+    height: 50px;
+    width: 20vw;
+  }
+
+  .fa-user {
+    position: relative;
+    top: 5px;
+    justify-content: center;
+    align-items: center;
+    color: purple;
+  }
+  
+  #profile {
+    display: flex;
+    background-color: lightcoral;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+  }
+  
+  li:hover {
+    background-color: lightgreen;
+  }
+  
+  /* Profile-page */
+  
+  .profile {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #profile-icon{
+    font-size: 5rem;
+    color: black;
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 50%;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }

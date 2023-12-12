@@ -14,6 +14,7 @@ body {
 
 main {
   background-color: beige;
+  padding-bottom: 1px;
 }
 
 header {
@@ -52,6 +53,14 @@ li {
   font-size: 1.8rem;
   width: 200px;
   height: 50px;
+}
+
+.fa-user {
+  position: relative;
+  top: 5px;
+  justify-content: center;
+  align-items: center;
+  color: purple;
 }
 
 #bookmarks {
