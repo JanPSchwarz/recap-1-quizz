@@ -69,7 +69,7 @@ li {
   color: purple;
 }
 
-#profile {
+.profile {
   display: flex;
   background-color: lightcoral;
   justify-content: center;
@@ -90,7 +90,7 @@ li:hover {
 
 /* picture and name */
 
-.profile {
+.profile-section {
   display: flex;
   margin: 60px auto;
   padding: 10px;
@@ -101,7 +101,7 @@ li:hover {
   background-color: lightcoral;
 }
 
-#profile-icon {
+.profile-icon {
   font-size: 5rem;
   color: cornsilk;
   border: 3px solid cornsilk;
@@ -168,6 +168,8 @@ h3 {
   font-size: 2rem;
   padding: 0 0 20px;
 }
+
+/* Toggle-Switch */
 
 .toggle-switch {
   display: flex;

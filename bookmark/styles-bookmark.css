@@ -65,7 +65,7 @@ li {
   color: purple;
 }
 
-#bookmarks {
+.bookmarks {
   display: flex;
   background-color: lightcoral;
   justify-content: center;
@@ -120,7 +120,7 @@ li:hover {
   font-size: 1.5rem;
 }
 
-button {
+.show-answer-button {
   margin: 20px auto;
   font-size: 1.2rem;
   border-radius: 5px;
@@ -130,15 +130,18 @@ button {
   bottom: 40px;
 }
 
-button:hover {
+.show-answer-button:hover {
   cursor: pointer;
   transition: padding 0.2s ease-in-out;
   padding: 5px 15px;
 }
 
-.fa-bookmark {
+.bookmark-button {
   font-size: 2.4rem;
   position: absolute;
   top: -20px;
   right: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
