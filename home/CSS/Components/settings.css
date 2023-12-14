@@ -1,0 +1,58 @@
+/* Settings */
+
+.settings {
+    padding: 20px 40px;
+  }
+  
+  .settings h3 {
+    font-size: 2rem;
+    padding: 0 0 20px;
+  }
+  
+  /* Toggle-Switch */
+  
+  .toggle-switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+  }
+  
+  label {
+    position: relative;
+    font-size: 2rem;
+  }
+  
+  input {
+    -webkit-appearance: none;
+    position: relative;
+    width: 80px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: lightcoral;
+    transition: background-color 0.3s;
+    outline: none;
+    cursor: pointer;
+    margin-right: 80px;
+  }
+  
+  input::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    background-color: black;
+    transition: left 0.3s;
+  }
+  
+  input:checked {
+    background-color: lightgreen;
+  }
+  
+  input:checked::after {
+    left: 70%;
+  }

@@ -1,0 +1,47 @@
+/* Profile-page */
+
+/* picture and name */
+
+.profile-section {
+  display: flex;
+  margin: 60px auto;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid lightcoral;
+  width: 50vw;
+  background-color: lightcoral;
+}
+
+.profile-icon {
+  font-size: 5rem;
+  color: cornsilk;
+  border: 3px solid cornsilk;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.profile h2 {
+  font-size: 4rem;
+  color: cornsilk;
+}
+
+/* about-me */
+
+.about-me {
+  padding: 20px 40px;
+}
+
+.about-me h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-me p {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  /* text-decoration: underline; */
+  text-align: justify;
+  border: 1px dashed lightcoral;
+  padding: 5px 10px;
+}
