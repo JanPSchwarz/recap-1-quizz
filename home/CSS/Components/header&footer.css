@@ -1,0 +1,63 @@
+header {
+  width: 100%;
+  border: 1px solid black;
+  padding: 8px;
+  background-color: lightcoral;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.turtle {
+  width: 40px;
+  margin-right: 10px;
+}
+
+footer {
+  border: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  background-color: beige;
+}
+
+footer ul {
+  display: flex;
+  width: 60vw;
+}
+
+footer ul li {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: 1.8rem;
+  height: 50px;
+  width: 20vw;
+}
+
+.fa-user {
+  position: relative;
+  top: 5px;
+  justify-content: center;
+  align-items: center;
+  color: purple;
+}
+
+.home {
+  display: flex;
+  background-color: lightcoral;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+footer a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+li:hover {
+  background-color: lightgreen;
+}

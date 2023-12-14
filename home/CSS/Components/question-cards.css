@@ -1,0 +1,64 @@
+.question_card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 15px 0;
+    width: 35vw;
+    max-width: 500px;
+    height: 200px;
+    background-color: lightblue;
+    box-shadow: 0px 0px 2px 0px;
+  }
+  
+  .question {
+    margin: 5px auto;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .hash-tag_box {
+    position: absolute;
+    display: flex;
+    bottom: 6px;
+    left: 3px;
+  }
+  
+  .hash_tag {
+    margin: 0 3px;
+    background-color: lightcoral;
+    border-radius: 5px;
+    color: black;
+    padding: 2px;
+    box-shadow: 0px 0px 2px 0px;
+  }
+  
+  .show-answer-button {
+    margin: 20px auto;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 0px;
+    background-color: lightgreen;
+    padding: 5px 10px;
+    bottom: 40px;
+  }
+  
+  .show-answer-button:hover {
+    cursor: pointer;
+    transition: padding 0.2s ease-in-out;
+    padding: 5px 15px;
+  }
+  
+  .bookmark-button {
+    font-size: 2.4rem;
+    position: absolute;
+    top: -20px;
+    right: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }

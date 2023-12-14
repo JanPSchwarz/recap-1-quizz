@@ -1,0 +1,23 @@
+/* counter */
+
+.counter {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .counter p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin: 10px 20px;
+    margin-left: 40px;
+    border: 1px solid lightcoral;
+    border-radius: 10px;
+    width: 200px;
+  }
+  
+  .counter i {
+    font-size: 3rem;
+    margin-right: 20px;
+  }
