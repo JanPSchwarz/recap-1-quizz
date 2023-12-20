@@ -1,40 +1,52 @@
 header {
-  width: 100%;
+  max-height: 100px;
   border: 1px solid black;
   padding: 8px;
-  background-color: lightcoral;
+  background-color: var(--header-color);
   display: flex;
   justify-content: center;
+  align-items: center;
   position: sticky;
   top: 0;
   z-index: 1;
+  color: var(--text-color);
+}
+
+header h1 {
+  font-size: 2rem;
 }
 
 .turtle {
-  width: 40px;
+  width: 12%;
+  max-width: 80px;
   margin-right: 10px;
 }
 
-footer {
-  border: 1px solid black;
+.footer {
+  border: 1px solid var(--black-color);
   position: fixed;
   bottom: 0;
   height: 50px;
-  background-color: beige;
+  background-color: var(--background-color);
+  width: 100%;
 }
 
-footer ul {
+.footer ul {
   display: flex;
-  width: 60vw;
 }
 
-footer ul li {
+.footer ul li {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
   font-size: 1.8rem;
   height: 50px;
-  width: 20vw;
+}
+
+.footer a {
+  width: 33.3%;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .fa-user {
@@ -47,17 +59,11 @@ footer ul li {
 
 .home {
   display: flex;
-  background-color: lightcoral;
+  /* background-color: var(--header-color); */
   justify-content: center;
   justify-content: space-evenly;
 }
 
-footer a {
-  text-decoration: none;
-  cursor: pointer;
-  color: black;
-}
-
 li:hover {
-  background-color: lightgreen;
+  background-color: var(--button-color);
 }

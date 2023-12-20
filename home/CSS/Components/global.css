@@ -12,23 +12,27 @@
 }
 
 :root {
-  --main-color: ;
-  --second-color: ;
-  --button-color: ;
-  --back-ground-color: ;
-  --white-color: ;
-  --second-white-color: ;
-  --black-color: ;
+  --background-color: beige ;
+  --header-color: lightcoral;
+  --button-color: lightgreen;
+  --question-color: lightblue;
+  --white-color: #FFFBF5;
+  --second-white-color: cornsilk;
+  --black-color: black;
+  --text-color: black;
+
+  --default-font-size: 12px;
 }
 
 body {
-  width: 60vw;
-  margin: 50px auto;
+  width: 100%;
+  margin: 10% auto;
+  font-size: var(--default-font-size);
   /* border: 1px solid black; */
 }
 
 main {
-  background-color: beige;
+  background-color: var(--background-color);
   width: 100%;
   padding-bottom: 15px;
 }

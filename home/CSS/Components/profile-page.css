@@ -8,22 +8,23 @@
   padding: 10px;
   align-items: center;
   justify-content: space-evenly;
-  border: 1px solid lightcoral;
-  width: 50vw;
-  background-color: lightcoral;
+  border: 1px solid var(--header-color);
+  width: 80vw;
+  max-width: 500px;
+  background-color: var(--header-color);
 }
 
 .profile-icon {
-  font-size: 5rem;
-  color: cornsilk;
-  border: 3px solid cornsilk;
+  font-size: 3rem;
+  color: var(--white-color);
+  border: 3px solid var(--white-color);
   padding: 20px;
   border-radius: 50%;
 }
 
-.profile h2 {
-  font-size: 4rem;
-  color: cornsilk;
+.profile-section h2 {
+  font-size: 2.5em;
+  color: var(--white-color);
 }
 
 /* about-me */
@@ -39,9 +40,9 @@
 
 .about-me p {
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   /* text-decoration: underline; */
   text-align: justify;
-  border: 1px dashed lightcoral;
+  border: 1px dashed var(--header-color);
   padding: 5px 10px;
 }

@@ -21,3 +21,7 @@
 /* Profile-Page Settings  */
 
 @import url(CSS/Components/settings.css);
+
+/* Media-Queries */
+
+@import url(/home/CSS/Components/media-queries.css);

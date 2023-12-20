@@ -9,12 +9,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 10px 20px;
     margin-left: 40px;
-    border: 1px solid lightcoral;
+    padding: 2%;
+    border: 1px solid var(--header-color);
     border-radius: 10px;
-    width: 200px;
+    width: 30%;
   }
   
   .counter i {
