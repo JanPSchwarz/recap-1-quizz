@@ -1,6 +1,7 @@
 header {
   max-height: 100px;
-  border: 1px solid black;
+  border: 1px solid var(--header-color);
+  box-shadow: 0px 0px 5px 1px var(--black-color);
   padding: 8px;
   background-color: var(--header-color);
   display: flex;
@@ -29,6 +30,7 @@ header h1 {
   height: 50px;
   background-color: var(--background-color);
   width: 100%;
+  box-shadow: 0px 0px 5px 1px var(--black-color);
 }
 
 .footer ul {

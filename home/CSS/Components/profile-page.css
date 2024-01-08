@@ -12,6 +12,7 @@
   width: 80vw;
   max-width: 500px;
   background-color: var(--header-color);
+  box-shadow: 0px 0px 5px 1px var(--question-color);
 }
 
 .profile-icon {

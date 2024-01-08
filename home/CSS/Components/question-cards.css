@@ -15,6 +15,10 @@
     box-shadow: 0px 0px 2px 0px;
     color: var(--text-color);
   }
+
+  .question_card:last-of-type {
+    margin-bottom: 70px;
+  }
   
   .question {
     margin: 5px auto;
