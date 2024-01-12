@@ -2,6 +2,10 @@
 
 /* picture and name */
 
+.body-profile-page::before {
+  background-image: var(--background-color);
+}
+
 .profile-section {
   display: flex;
   margin: 60px auto;
