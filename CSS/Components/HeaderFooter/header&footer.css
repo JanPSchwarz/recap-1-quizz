@@ -58,6 +58,10 @@
   color: purple;
 }
 
+.form {
+  border: 3px solid;
+}
+
 li:hover {
   background-color: var(--button-color);
 }

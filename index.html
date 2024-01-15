@@ -8,7 +8,7 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Caveat" />
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <script
       src="https://kit.fontawesome.com/4328664281.js"
       crossorigin="anonymous"></script>
@@ -24,11 +24,19 @@
       </header>
 
       <section class="question_card">
-        <button class="bookmark-button">
-          <i class="fa-solid fa-bookmark"></i>
+        <button class="bookmark-button" data-js="bookmark-button">
+          <i
+            class="fa-regular fa-bookmark fa-solid"
+            data-js="bookmark-sign"></i>
         </button>
         <p class="question">Wie alt können Schildkröten werden?</p>
-        <button class="show-answer-button">Show Answer</button>
+        <button class="show-answer-button" data-js="show-answer-button">Show Answer</button>
+        <p class="answer hidden" data-js="answer">
+          Europäische Landschildkröten werden bis zu 70 Jahre alt.
+          Seychellen-Riesenschildkröten schaffen auch 100 Jahre. Eine 2006 im
+          Zoo von Kairo verstorbene Galapagos-Riesenschildkröte soll stolze 270
+          Jahre alt geworden sein.
+        </p>
         <div class="hash-tag_box">
           <p class="hash_tag">#Schildkröten</p>
           <p class="hash_tag">#Natur</p>
@@ -107,6 +115,7 @@
           <a href="index-bookmark.html" aria-label="Bookmark-Page"
             ><li id="bookmarks">📘</li></a
           >
+          <a href="form.html" aria-label="Starting-Page"><li class="form">＋</li></a>
           <a href="index-profile.html" aria-label="Settings-Page"
             ><li id="profile"><i class="fa-solid fa-user"></i></li
           ></a>
