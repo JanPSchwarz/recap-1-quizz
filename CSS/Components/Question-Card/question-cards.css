@@ -37,6 +37,10 @@
   border-radius: 10px;
 }
 
+.hidden {
+  display: none;
+}
+
 .hash-tag_box {
   position: absolute;
   display: flex;
