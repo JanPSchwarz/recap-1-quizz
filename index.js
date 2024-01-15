@@ -17,9 +17,19 @@ const paragraphAnswer = document.querySelector('[data-js="answer"]');
 showAnswerButton.addEventListener("click", () => {
   paragraphAnswer.classList.toggle("hidden");
 
-  if (showAnswerButton.innerHTML === "Show Answer") {
-    showAnswerButton.innerHTML = "Hide Answer";
-  } else {
-    showAnswerButton.innerHTML = "Show Answer";
-  }
+  // If-Else Lösung für Text-Toggle-Button
+  // if (showAnswerButton.textContent === "Show Answer") {
+  //   showAnswerButton.textContent = "Hide Answer";
+  // } else {
+  //   showAnswerButton.textContent = "Show Answer";
+  // }
+
+  // Ternary-Operator Lösung :
+
+  showAnswerButtonText =
+    showAnswerButton.textContent === "Show Answer"
+      ? "Hide Answer"
+      : "Show Answer";
+
+  showAnswerButton.textContent = `${showAnswerButtonText}`;
 });
