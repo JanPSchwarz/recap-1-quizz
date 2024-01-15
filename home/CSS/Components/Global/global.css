@@ -12,9 +12,11 @@
 }
 
 :root {
-  --background-color: rgb(250,248,243);
+  --background-color: rgb(250, 248, 243);
   --header-color: lightcoral;
-  --button-color: lightgreen;
+  --button-color: lightcoral;
+  --button-color-active: lightgreen;
+  --button-color-question-card: lightgreen;
   --question-color: lightblue;
   --white-color: #fffbf5;
   --second-white-color: cornsilk;
@@ -22,13 +24,14 @@
   --text-color: black;
 
   --default-font-size: 12px;
+
+  font-size: 16px;
 }
 
 body {
   position: relative;
   width: 100%;
   margin: auto;
-  font-size: var(--default-font-size);
 
   /* border: 1px solid black; */
 }
@@ -40,7 +43,7 @@ body::before {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(/109.jpg);
+  background-image: url(/home/Pictures/109.jpg);
   background-size: contain;
   background-attachment: fixed;
   opacity: 0.5;

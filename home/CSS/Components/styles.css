@@ -1,0 +1,27 @@
+/* Global Rule-Sets */
+
+@import url(Global/global.css);
+
+/* Header & Footer all pages*/
+
+@import url(HeaderFooter/header&footer.css);
+
+/* Question-Cards home page & bookmark page*/
+
+@import url(Question-Card/question-cards.css);
+
+/* Profile-Page */
+
+@import url(Profile-Page/profile-page.css);
+
+/* Profile-Page Counter */
+
+@import url(Profile-Page/counter.css);
+
+/* Profile-Page Settings  */
+
+@import url(Profile-Page/settings.css);
+
+/* Media-Queries */
+
+@import url(Media-Queries/media-queries.css);
