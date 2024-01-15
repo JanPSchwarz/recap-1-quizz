@@ -42,14 +42,14 @@ input::after {
   left: 30%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  height: 2rem;
-  width: 2rem;
+  height: 1.8rem;
+  width: 1.8rem;
   background-color: var(--black-color);
   transition: left 0.3s;
 }
 
 input:checked {
-  background-color: var(--button-color);
+  background-color: var(--button-color-active);
 }
 
 input:checked::after {
