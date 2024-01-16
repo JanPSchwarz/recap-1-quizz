@@ -1,10 +1,68 @@
+// Character feature
+
+const inputQuestion = document.querySelector('[data-js="newQuestion"]');
+const counterQuestion = document.querySelector(
+  '[data-js="character-counter-question"]'
+);
+
+const progressBarQuestion = document.querySelector(
+  '[data-js="progress-bar-question"]'
+);
+
+inputQuestion.addEventListener("input", (event) => {
+  const countNumber = event.target.value.length;
+  const countResult = 150 - countNumber;
+
+  counterQuestion.textContent = `${countResult} Characters left`;
+
+  const widthProgressBar = ((150 - countNumber) / 150) * 100;
+
+  progressBarQuestion.style.width = `${widthProgressBar}%`;
+});
+
+const inputAnswer = document.querySelector('[data-js="answerField"]');
+const counterAnswer = document.querySelector(
+  '[data-js="character-counter-answer"]'
+);
+const progressBarAnswer = document.querySelector(
+  '[data-js="progress-bar-answer"]'
+);
+
+inputAnswer.addEventListener("input", (event) => {
+  const countNumber = event.target.value.length;
+  const countResult = 150 - countNumber;
+
+  counterAnswer.textContent = `${countResult} Characters left`;
+
+  const widthProgressBar = ((150 - countNumber) / 150) * 100;
+
+  progressBarAnswer.style.width = `${widthProgressBar}%`;
+});
+
+const inputHash = document.querySelector('[data-js="tagInput"]');
+const counterHash = document.querySelector(
+  '[data-js="character-counter-hash"]'
+);
+const progressBarHash = document.querySelector('[data-js="progress-bar-hash"]');
+
+inputHash.addEventListener("input", (event) => {
+  const countNumber = event.target.value.length;
+  const countResult = 50 - countNumber;
+
+  counterHash.textContent = `${countResult} Characters left`;
+
+  const widthProgressBar = ((50 - countNumber) / 50) * 100;
+
+  progressBarHash.style.width = `${widthProgressBar}%`;
+});
+
+// Form für neue Question
+
 const submitButton = document.querySelector('[data-js="submit-button"]');
 
 const form = document.querySelector('[data-js="form"]');
 
 const questionSection = document.querySelector('[data-js="question-section"]');
-
-// Form für neue Quesiton
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -53,6 +111,12 @@ form.addEventListener("submit", (event) => {
   questionSection.append(section);
   form.reset();
   event.target.newQuestion.focus();
-});
 
-// Charackter feature
+  progressBarQuestion.style.width = "100%";
+  progressBarAnswer.style.width = "100%";
+  progressBarHash.style.width = "100%";
+
+  counterQuestion.textContent = "150 Characters left";
+  counterAnswer.textContent = "150 Characters left";
+  counterHash.textContent = "50 Characters left";
+});

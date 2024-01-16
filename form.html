@@ -30,37 +30,40 @@
           <textarea
             name="newQuestion"
             id="new-question"
+            data-js="newQuestion"
             cols="30"
             rows="10"
             class="input-textarea"
-            maxlength="50"
+            maxlength="150"
             required></textarea>
-          <p class="character-counter">50 Characters left</p>
-          <div class="progress-bar"></div>
+          <p class="character-counter" data-js="character-counter-question">150 Characters left</p>
+          <div class="progress-bar" data-js="progress-bar-question"></div>
         </section>
         <section class="input-box">
           <label for="answer-field" class="input-label"> Answer: </label>
           <textarea
             name="answerField"
+            data-js="answerField"
             id="answer-field"
             cols="30"
             rows="10"
             class="input-textarea"
-            maxlength="50"
+            maxlength="150"
             required></textarea>
-          <p class="character-counter">50 Characters left</p>
-          <div class="progress-bar"></div>
+          <p class="character-counter" data-js="character-counter-answer">150 Characters left</p>
+          <div class="progress-bar" data-js="progress-bar-answer"></div>
         </section>
         <section class="input-box">
           <label for="tag-input" class="input-label"># - Tag:</label>
           <input
             type="text"
             name="tagInput"
+            data-js="tagInput"
             id="tag-input"
             class="input-textarea"
-            maxlength="20" />
-          <p class="character-counter">50 Characters left</p>
-          <div class="progress-bar"></div>
+            maxlength="50" />
+          <p class="character-counter" data-js="character-counter-hash">50 Characters left</p>
+          <div class="progress-bar" data-js="progress-bar-hash"></div>
         </section>
         <button type="submit" class="submit-button" data-js="submit-button">
           Create Question
