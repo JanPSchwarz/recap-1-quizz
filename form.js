@@ -2,12 +2,12 @@
 
 // General Function for Character Count + ProgressBar Style Change
 
-function characterCount(input, textInput, progressBar) {
-  const countNumber = input.value.length;
-  countResult = 50 - countNumber;
+function characterCount(input, textInput, progressBar, maxLength) {
+  countNumber = input.value.length;
+  countResult = maxLength - countNumber;
 
   textInput.textContent = `${countResult} Characters left`;
-  const widthProgressBar = ((50 - countNumber) / 50) * 100;
+  widthProgressBar = ((maxLength - countNumber) / maxLength) * 100;
 
   progressBar.style.width = `${widthProgressBar}%`;
 }
@@ -23,11 +23,17 @@ const counterQuestion = document.querySelector(
 const progressBarQuestion = document.querySelector(
   '[data-js="progress-bar-question"]'
 );
+const maxLengthQuestion = inputQuestion.getAttribute("maxlength");
 
 //Passing function with parameters to EventListener
 
 inputQuestion.addEventListener("input", function () {
-  characterCount(inputQuestion, counterQuestion, progressBarQuestion);
+  characterCount(
+    inputQuestion,
+    counterQuestion,
+    progressBarQuestion,
+    maxLengthQuestion
+  );
 });
 
 // For Answer Input field
@@ -40,11 +46,17 @@ const counterAnswer = document.querySelector(
 const progressBarAnswer = document.querySelector(
   '[data-js="progress-bar-answer"]'
 );
+const maxLengthAnswer = inputAnswer.getAttribute("maxlength");
 
 // Passing Function with Paramaters to EventListener
 
 inputAnswer.addEventListener("input", function () {
-  characterCount(inputAnswer, counterAnswer, progressBarAnswer);
+  characterCount(
+    inputAnswer,
+    counterAnswer,
+    progressBarAnswer,
+    maxLengthAnswer
+  );
 });
 
 // For Hast-Tag Input field
@@ -56,11 +68,12 @@ const counterHash = document.querySelector(
   '[data-js="character-counter-hash"]'
 );
 const progressBarHash = document.querySelector('[data-js="progress-bar-hash"]');
+const maxLengthHash = inputHash.getAttribute("maxlength");
 
 // Passing function with paramaters to EventListener
 
 inputHash.addEventListener("input", function () {
-  characterCount(inputHash, counterHash, progressBarHash);
+  characterCount(inputHash, counterHash, progressBarHash, maxLengthHash);
 });
 
 ////////// LONG-VERSION with copy&paste Code for Character Count feature /////////////
