@@ -1,9 +1,13 @@
 /* Settings */
 
 .settings {
+  display: flex;
+  flex-direction: column;
   padding: 40px 40px;
-  /* margin-bottom: calc(50px + 10%); */
   margin-bottom: 50px;
+  width: 80vw;
+  max-width: 800px;
+  margin: auto;
 }
 
 .settings h3 {
@@ -16,6 +20,7 @@
 .toggle-switch {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 label {
@@ -24,8 +29,7 @@ label {
 
 .toggle-input {
   -webkit-appearance: none;
-  position: absolute;
-  right: 10%;
+  position: relative;
   width: 70px;
   height: 50px;
   border-radius: 25px;
