@@ -58,8 +58,8 @@
   color: purple;
 }
 
-.form {
-  border: 3px solid;
+.form-icon {
+  color: var(--black-color);
 }
 
 li:hover {

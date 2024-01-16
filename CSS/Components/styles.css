@@ -10,6 +10,10 @@
 
 @import url(Question-Card/question-cards.css);
 
+/* Form-Page  */
+
+@import url(Form-Page/form-page.css);
+
 /* Profile-Page */
 
 @import url(Profile-Page/profile-page.css);
