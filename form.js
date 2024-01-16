@@ -1,25 +1,44 @@
 // Character feature
 
+// General Function for Character Count + ProgressBar Style Change
+
+function characterCount(input, textInput, progressBar, maxLength) {
+  countNumber = input.value.length;
+  countResult = maxLength - countNumber;
+
+  textInput.textContent = `${countResult} Characters left`;
+  widthProgressBar = ((maxLength - countNumber) / maxLength) * 100;
+
+  progressBar.style.width = `${widthProgressBar}%`;
+}
+
+// For Question Input field
+
+// Parameter for Textarea New Questioin
+
 const inputQuestion = document.querySelector('[data-js="newQuestion"]');
 const counterQuestion = document.querySelector(
   '[data-js="character-counter-question"]'
 );
-
 const progressBarQuestion = document.querySelector(
   '[data-js="progress-bar-question"]'
 );
+const maxLengthQuestion = inputQuestion.getAttribute("maxlength");
 
-inputQuestion.addEventListener("input", (event) => {
-  const countNumber = event.target.value.length;
-  const countResult = 150 - countNumber;
+//Passing function with parameters to EventListener
 
-  counterQuestion.textContent = `${countResult} Characters left`;
-
-  const widthProgressBar = ((150 - countNumber) / 150) * 100;
-
-  progressBarQuestion.style.width = `${widthProgressBar}%`;
+inputQuestion.addEventListener("input", function () {
+  characterCount(
+    inputQuestion,
+    counterQuestion,
+    progressBarQuestion,
+    maxLengthQuestion
+  );
 });
 
+// For Answer Input field
+
+// Paramater for Textarea Answer
 const inputAnswer = document.querySelector('[data-js="answerField"]');
 const counterAnswer = document.querySelector(
   '[data-js="character-counter-answer"]'
@@ -27,34 +46,90 @@ const counterAnswer = document.querySelector(
 const progressBarAnswer = document.querySelector(
   '[data-js="progress-bar-answer"]'
 );
+const maxLengthAnswer = inputAnswer.getAttribute("maxlength");
 
-inputAnswer.addEventListener("input", (event) => {
-  const countNumber = event.target.value.length;
-  const countResult = 150 - countNumber;
+// Passing Function with Paramaters to EventListener
 
-  counterAnswer.textContent = `${countResult} Characters left`;
-
-  const widthProgressBar = ((150 - countNumber) / 150) * 100;
-
-  progressBarAnswer.style.width = `${widthProgressBar}%`;
+inputAnswer.addEventListener("input", function () {
+  characterCount(
+    inputAnswer,
+    counterAnswer,
+    progressBarAnswer,
+    maxLengthAnswer
+  );
 });
+
+// For Hast-Tag Input field
+
+//Paramater for Hash-Tag Field
 
 const inputHash = document.querySelector('[data-js="tagInput"]');
 const counterHash = document.querySelector(
   '[data-js="character-counter-hash"]'
 );
 const progressBarHash = document.querySelector('[data-js="progress-bar-hash"]');
+const maxLengthHash = inputHash.getAttribute("maxlength");
 
-inputHash.addEventListener("input", (event) => {
-  const countNumber = event.target.value.length;
-  const countResult = 50 - countNumber;
+// Passing function with paramaters to EventListener
 
-  counterHash.textContent = `${countResult} Characters left`;
-
-  const widthProgressBar = ((50 - countNumber) / 50) * 100;
-
-  progressBarHash.style.width = `${widthProgressBar}%`;
+inputHash.addEventListener("input", function () {
+  characterCount(inputHash, counterHash, progressBarHash, maxLengthHash);
 });
+
+////////// LONG-VERSION with copy&paste Code for Character Count feature /////////////
+
+// inputQuestion.addEventListener("input", (event) => {
+//   const countNumber = event.target.value.length;
+//   const countResult = 150 - countNumber;
+
+//   counterQuestion.textContent = `${countResult} Characters left`;
+
+//   const widthProgressBar = ((150 - countNumber) / 150) * 100;
+
+//   progressBarQuestion.style.width = `${widthProgressBar}%`;
+// });
+
+// For Answer Input field
+
+// const inputAnswer = document.querySelector('[data-js="answerField"]');
+// const counterAnswer = document.querySelector(
+//   '[data-js="character-counter-answer"]'
+// );
+// const progressBarAnswer = document.querySelector(
+//   '[data-js="progress-bar-answer"]'
+// );
+
+// inputAnswer.addEventListener("input", (event) => {
+//   const countNumber = event.target.value.length;
+//   const countResult = 150 - countNumber;
+
+//   counterAnswer.textContent = `${countResult} Characters left`;
+
+//   const widthProgressBar = ((150 - countNumber) / 150) * 100;
+
+//   progressBarAnswer.style.width = `${widthProgressBar}%`;
+// });
+
+// For Hash-Tag Input field
+
+// const inputHash = document.querySelector('[data-js="tagInput"]');
+// const counterHash = document.querySelector(
+//   '[data-js="character-counter-hash"]'
+// );
+// const progressBarHash = document.querySelector('[data-js="progress-bar-hash"]');
+
+// inputHash.addEventListener("input", (event) => {
+//   const countNumber = event.target.value.length;
+//   const countResult = 50 - countNumber;
+
+//   counterHash.textContent = `${countResult} Characters left`;
+
+//   const widthProgressBar = ((50 - countNumber) / 50) * 100;
+
+//   progressBarHash.style.width = `${widthProgressBar}%`;
+// });
+
+///////////////////////////////////////////////////////////////////
 
 // Form für neue Question
 
@@ -96,6 +171,11 @@ form.addEventListener("submit", (event) => {
   paragraphAnswer.textContent = answer;
   paragraphHashTag.textContent = "#" + hashTag;
   buttonAnswer.textContent = "Show Answer";
+
+  buttonBookmark.setAttribute("data-js", "bookmark-button");
+  icon.setAttribute("data-js", "bookmark-sign");
+  buttonAnswer.setAttribute("data-js", "show-answer-button");
+  paragraphAnswer.setAttribute("data-js", "answer");
 
   buttonBookmark.append(icon);
   divHashTag.append(paragraphHashTag);
