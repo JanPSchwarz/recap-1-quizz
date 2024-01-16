@@ -1,5 +1,7 @@
 // Character feature
 
+// For Quesiton Input field
+
 const inputQuestion = document.querySelector('[data-js="newQuestion"]');
 const counterQuestion = document.querySelector(
   '[data-js="character-counter-question"]'
@@ -20,6 +22,8 @@ inputQuestion.addEventListener("input", (event) => {
   progressBarQuestion.style.width = `${widthProgressBar}%`;
 });
 
+// For Answer Input field
+
 const inputAnswer = document.querySelector('[data-js="answerField"]');
 const counterAnswer = document.querySelector(
   '[data-js="character-counter-answer"]'
@@ -38,6 +42,8 @@ inputAnswer.addEventListener("input", (event) => {
 
   progressBarAnswer.style.width = `${widthProgressBar}%`;
 });
+
+// For Hash-Tag Input field
 
 const inputHash = document.querySelector('[data-js="tagInput"]');
 const counterHash = document.querySelector(
@@ -96,6 +102,11 @@ form.addEventListener("submit", (event) => {
   paragraphAnswer.textContent = answer;
   paragraphHashTag.textContent = "#" + hashTag;
   buttonAnswer.textContent = "Show Answer";
+
+  buttonBookmark.setAttribute("data-js", "bookmark-button");
+  icon.setAttribute("data-js", "bookmark-sign");
+  buttonAnswer.setAttribute("data-js", "show-answer-button");
+  paragraphAnswer.setAttribute("data-js", "answer");
 
   buttonBookmark.append(icon);
   divHashTag.append(paragraphHashTag);
