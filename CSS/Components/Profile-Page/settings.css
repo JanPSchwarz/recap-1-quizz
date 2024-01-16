@@ -22,7 +22,7 @@ label {
   font-size: 1.5rem;
 }
 
-input {
+.toggle-input {
   -webkit-appearance: none;
   position: absolute;
   right: 10%;
@@ -35,7 +35,7 @@ input {
   cursor: pointer;
 }
 
-input::after {
+.toggle-input::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -48,10 +48,10 @@ input::after {
   transition: left 0.3s;
 }
 
-input:checked {
+.toggle-input:checked {
   background-color: var(--button-color-active);
 }
 
-input:checked::after {
+.toggle-input:checked::after {
   left: 70%;
 }

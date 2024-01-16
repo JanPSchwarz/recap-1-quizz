@@ -7,7 +7,7 @@ bookmarkButton.addEventListener("click", () => {
   bookmarkSign.classList.toggle("fa-solid");
 });
 
-// Show-Anser Button
+// Show-Answer Button
 
 const showAnswerButton = document.querySelector(
   '[data-js="show-answer-button"]'
@@ -26,7 +26,7 @@ showAnswerButton.addEventListener("click", () => {
 
   // Ternary-Operator Lösung :
 
-  showAnswerButtonText =
+  const showAnswerButtonText =
     showAnswerButton.textContent === "Show Answer"
       ? "Hide Answer"
       : "Show Answer";

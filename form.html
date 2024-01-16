@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schildkröten Quizz</title>
+    <link rel="stylesheet" href="CSS/Components/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Caveat" />
+    <script src="form.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/4328664281.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body class="body-form-page">
+    <main data-js="main">
+      <header class="header">
+        <img
+          src="Pictures/turtle.png"
+          class="turtle"
+          alt="Picture of a turtle" />
+        <h1>Quizz App</h1>
+      </header>
+      <form action="" class="form" data-js="form">
+        <section class="input-box">
+          <label for="new-question" class="input-label"
+            >Add New Question:
+          </label>
+          <textarea
+            name="newQuestion"
+            id="new-question"
+            cols="30"
+            rows="10"
+            class="input-textarea"
+            maxlength="50"
+            required></textarea>
+          <p class="character-counter">50 Characters left</p>
+          <div class="progress-bar"></div>
+        </section>
+        <section class="input-box">
+          <label for="answer-field" class="input-label"> Answer: </label>
+          <textarea
+            name="answerField"
+            id="answer-field"
+            cols="30"
+            rows="10"
+            class="input-textarea"
+            maxlength="50"
+            required></textarea>
+          <p class="character-counter">50 Characters left</p>
+          <div class="progress-bar"></div>
+        </section>
+        <section class="input-box">
+          <label for="tag-input" class="input-label"># - Tag:</label>
+          <input
+            type="text"
+            name="tagInput"
+            id="tag-input"
+            class="input-textarea"
+            maxlength="20" />
+          <p class="character-counter">50 Characters left</p>
+          <div class="progress-bar"></div>
+        </section>
+        <button type="submit" class="submit-button" data-js="submit-button">
+          Create Question
+        </button>
+      </form>
+
+      <section class="question-section" data-js="question-section"></section>
+
+      <footer class="footer">
+        <ul>
+          <a href="index.html" aria-label="Starting-Page"
+            ><li class="">🏠</li></a
+          >
+          <a href="index-bookmark.html" aria-label="Bookmark-Page"
+            ><li>📘</li></a
+          >
+          <a href="form.html" aria-label="form-Page"
+            ><li class="marked">
+              <i class="form-icon fa-solid fa-circle-plus"></i></li
+          ></a>
+          <a href="index-profile.html" aria-label="Settings-Page"
+            ><li id="profile"><i class="fa-solid fa-user"></i></li
+          ></a>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>
