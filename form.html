@@ -14,7 +14,7 @@
       crossorigin="anonymous"></script>
   </head>
   <body class="body-form-page">
-    <main>
+    <main data-js="main">
       <header class="header">
         <img
           src="Pictures/turtle.png"
@@ -22,14 +22,13 @@
           alt="Picture of a turtle" />
         <h1>Quizz App</h1>
       </header>
-
-      <form action="" class="form">
+      <form action="" class="form" data-js="form">
         <section class="input-box">
           <label for="new-question" class="input-label"
             >Add New Question:
           </label>
           <textarea
-            name="new-question"
+            name="newQuestion"
             id="new-question"
             cols="30"
             rows="10"
@@ -42,7 +41,7 @@
         <section class="input-box">
           <label for="answer-field" class="input-label"> Answer: </label>
           <textarea
-            name="answer-field"
+            name="answerField"
             id="answer-field"
             cols="30"
             rows="10"
@@ -56,15 +55,19 @@
           <label for="tag-input" class="input-label"># - Tag:</label>
           <input
             type="text"
-            name="tag-input"
+            name="tagInput"
             id="tag-input"
             class="input-textarea"
             maxlength="20" />
           <p class="character-counter">50 Characters left</p>
           <div class="progress-bar"></div>
         </section>
-        <button type="submit" class="submit-button">Submit</button>
+        <button type="submit" class="submit-button" data-js="submit-button">
+          Create Question
+        </button>
       </form>
+
+      <section class="question-section" data-js="question-section"></section>
 
       <footer class="footer">
         <ul>
