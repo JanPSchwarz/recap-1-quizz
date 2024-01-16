@@ -1,29 +1,38 @@
 // Character feature
 
-// For Quesiton Input field
+// General Function for Character Count + ProgressBar Style Change
+
+function characterCount(input, textInput, progressBar) {
+  const countNumber = input.value.length;
+  countResult = 50 - countNumber;
+
+  textInput.textContent = `${countResult} Characters left`;
+  const widthProgressBar = ((50 - countNumber) / 50) * 100;
+
+  progressBar.style.width = `${widthProgressBar}%`;
+}
+
+// For Question Input field
+
+// Parameter for Textarea New Questioin
 
 const inputQuestion = document.querySelector('[data-js="newQuestion"]');
 const counterQuestion = document.querySelector(
   '[data-js="character-counter-question"]'
 );
-
 const progressBarQuestion = document.querySelector(
   '[data-js="progress-bar-question"]'
 );
 
-inputQuestion.addEventListener("input", (event) => {
-  const countNumber = event.target.value.length;
-  const countResult = 150 - countNumber;
+//Passing function with parameters to EventListener
 
-  counterQuestion.textContent = `${countResult} Characters left`;
-
-  const widthProgressBar = ((150 - countNumber) / 150) * 100;
-
-  progressBarQuestion.style.width = `${widthProgressBar}%`;
+inputQuestion.addEventListener("input", function () {
+  characterCount(inputQuestion, counterQuestion, progressBarQuestion);
 });
 
 // For Answer Input field
 
+// Paramater for Textarea Answer
 const inputAnswer = document.querySelector('[data-js="answerField"]');
 const counterAnswer = document.querySelector(
   '[data-js="character-counter-answer"]'
@@ -32,18 +41,15 @@ const progressBarAnswer = document.querySelector(
   '[data-js="progress-bar-answer"]'
 );
 
-inputAnswer.addEventListener("input", (event) => {
-  const countNumber = event.target.value.length;
-  const countResult = 150 - countNumber;
+// Passing Function with Paramaters to EventListener
 
-  counterAnswer.textContent = `${countResult} Characters left`;
-
-  const widthProgressBar = ((150 - countNumber) / 150) * 100;
-
-  progressBarAnswer.style.width = `${widthProgressBar}%`;
+inputAnswer.addEventListener("input", function () {
+  characterCount(inputAnswer, counterAnswer, progressBarAnswer);
 });
 
-// For Hash-Tag Input field
+// For Hast-Tag Input field
+
+//Paramater for Hash-Tag Field
 
 const inputHash = document.querySelector('[data-js="tagInput"]');
 const counterHash = document.querySelector(
@@ -51,16 +57,66 @@ const counterHash = document.querySelector(
 );
 const progressBarHash = document.querySelector('[data-js="progress-bar-hash"]');
 
-inputHash.addEventListener("input", (event) => {
-  const countNumber = event.target.value.length;
-  const countResult = 50 - countNumber;
+// Passing function with paramaters to EventListener
 
-  counterHash.textContent = `${countResult} Characters left`;
-
-  const widthProgressBar = ((50 - countNumber) / 50) * 100;
-
-  progressBarHash.style.width = `${widthProgressBar}%`;
+inputHash.addEventListener("input", function () {
+  characterCount(inputHash, counterHash, progressBarHash);
 });
+
+////////// LONG-VERSION with copy&paste Code for Character Count feature /////////////
+
+// inputQuestion.addEventListener("input", (event) => {
+//   const countNumber = event.target.value.length;
+//   const countResult = 150 - countNumber;
+
+//   counterQuestion.textContent = `${countResult} Characters left`;
+
+//   const widthProgressBar = ((150 - countNumber) / 150) * 100;
+
+//   progressBarQuestion.style.width = `${widthProgressBar}%`;
+// });
+
+// For Answer Input field
+
+// const inputAnswer = document.querySelector('[data-js="answerField"]');
+// const counterAnswer = document.querySelector(
+//   '[data-js="character-counter-answer"]'
+// );
+// const progressBarAnswer = document.querySelector(
+//   '[data-js="progress-bar-answer"]'
+// );
+
+// inputAnswer.addEventListener("input", (event) => {
+//   const countNumber = event.target.value.length;
+//   const countResult = 150 - countNumber;
+
+//   counterAnswer.textContent = `${countResult} Characters left`;
+
+//   const widthProgressBar = ((150 - countNumber) / 150) * 100;
+
+//   progressBarAnswer.style.width = `${widthProgressBar}%`;
+// });
+
+// For Hash-Tag Input field
+
+// const inputHash = document.querySelector('[data-js="tagInput"]');
+// const counterHash = document.querySelector(
+//   '[data-js="character-counter-hash"]'
+// );
+// const progressBarHash = document.querySelector('[data-js="progress-bar-hash"]');
+
+// inputHash.addEventListener("input", (event) => {
+//   const countNumber = event.target.value.length;
+//   const countResult = 50 - countNumber;
+
+//   counterHash.textContent = `${countResult} Characters left`;
+
+//   const widthProgressBar = ((50 - countNumber) / 50) * 100;
+
+//   progressBarHash.style.width = `${widthProgressBar}%`;
+// });
+
+///////////////////////////////////////////////////////////////////
 
 // Form für neue Question
 
